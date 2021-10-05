@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyPickerView" customModule="星座好运势" customModuleProvider="target">
+            <connections>
+                <outlet property="myPickerView" destination="tDu-gl-7Gv" id="Hbe-ot-e0b"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="593" height="338"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bnz-TH-HIo">
+                    <rect key="frame" x="5" y="49" width="583" height="250"/>
+                    <subviews>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tDu-gl-7Gv">
+                            <rect key="frame" x="5" y="5" width="573" height="214.5"/>
+                        </pickerView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ER9-yn-Saj">
+                            <rect key="frame" x="5" y="219.5" width="573" height="25.5"/>
+                            <color key="backgroundColor" red="0.98823529409999999" green="0.95294117649999999" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="确认"/>
+                            <connections>
+                                <action selector="checkAction:" destination="-1" eventType="touchUpInside" id="Sq9-aX-6U9"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ER9-yn-Saj" secondAttribute="bottom" constant="5" id="HUA-f8-HrT"/>
+                        <constraint firstItem="ER9-yn-Saj" firstAttribute="top" secondItem="tDu-gl-7Gv" secondAttribute="bottom" id="ab9-11-PS2"/>
+                        <constraint firstAttribute="trailing" secondItem="tDu-gl-7Gv" secondAttribute="trailing" constant="5" id="cb3-EO-oAJ"/>
+                        <constraint firstItem="tDu-gl-7Gv" firstAttribute="height" secondItem="Bnz-TH-HIo" secondAttribute="height" multiplier="6/7" id="dhP-Sh-eRU"/>
+                        <constraint firstItem="ER9-yn-Saj" firstAttribute="leading" secondItem="Bnz-TH-HIo" secondAttribute="leading" constant="5" id="m4A-3f-07I"/>
+                        <constraint firstAttribute="trailing" secondItem="ER9-yn-Saj" secondAttribute="trailing" constant="5" id="o35-UT-pqZ"/>
+                        <constraint firstItem="tDu-gl-7Gv" firstAttribute="top" secondItem="Bnz-TH-HIo" secondAttribute="top" constant="5" id="sg8-bI-wf5"/>
+                        <constraint firstItem="tDu-gl-7Gv" firstAttribute="leading" secondItem="Bnz-TH-HIo" secondAttribute="leading" constant="5" id="vOg-k2-hn1"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Bnz-TH-HIo" secondAttribute="trailing" constant="5" id="UfG-8l-GH0"/>
+                <constraint firstItem="Bnz-TH-HIo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="pPt-Ze-qiA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Bnz-TH-HIo" secondAttribute="bottom" constant="5" id="seJ-rN-AtK"/>
+                <constraint firstItem="Bnz-TH-HIo" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="uYg-kv-I9t"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="267.39130434782612" y="-83.035714285714278"/>
+        </view>
+    </objects>
+</document>
